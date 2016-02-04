@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'sessions/index'
+
+  # get 'users/index'
   root 'yoga_classes#index'
   resources :yoga_classes
 
@@ -58,4 +61,11 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  
+  get    '/users/new', to: 'users#new'
+  post   '/users', to: 'users#create'
+  get    '/login'   => 'sessions#new'
+  post   '/login'   => 'sessions#create'
+  get    '/logout'  => 'sessions#destroy'
+  # resources :users
 end
