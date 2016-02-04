@@ -1,0 +1,12 @@
+<h1>YogaClasses#index</h1>
+
+<% if @yoga_classes.empty? %>
+  <h2>No classes scheduled. Please check back</h2>
+  <% end %>
+
+<% @yoga_classes.each do |yoga| %>
+  <%= yoga.date %> <%= yoga.time %> <a href='/yoga_classes/<%= yoga.id %>'
+<% end %>
+
+
+<a href='/yoga_classes/new'>Create a new class</a>
