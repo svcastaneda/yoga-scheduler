@@ -15,7 +15,6 @@ ActiveRecord::Schema.define(version: 20160204160509) do
 
   create_table "yoga_classes", force: :cascade do |t|
     t.date     "date",       null: false
-    t.time     "time",       null: false
     t.integer  "size",       null: false
     t.string   "teacher"
     t.datetime "created_at", null: false

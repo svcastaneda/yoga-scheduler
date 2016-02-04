@@ -1,14 +1,7 @@
-NEW CLASS TEMPLATE GOES HERE
-
 <%= form_for :yoga_class, url: yoga_classes_path do |f| %>
   <p>
     <%= f.label :date %><br>
     <%= f.date_select :date %><br>
-  </p>
-
-  <p>
-    <%= f.label :time %><br>
-    <%= f.time_select :time %><br>
   </p>
 
   <p>
@@ -25,4 +18,10 @@ NEW CLASS TEMPLATE GOES HERE
     <%= f.submit %>
   </p>
 
+<% end %>
+
+<% if @yoga_class && @yoga_class.errors %>
+  <% @yoga_class.errors.full_messages.each do |error| %>
+    <%= error %>
   <% end %>
+<% end %>

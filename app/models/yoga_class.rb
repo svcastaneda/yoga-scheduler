@@ -1,5 +1,4 @@
 class YogaClass < ActiveRecord::Base
-  validates :time, presence: true
   validates :date, presence: true
   validates :size, presence: true
 

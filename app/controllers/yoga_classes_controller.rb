@@ -5,8 +5,11 @@ class YogaClassesController < ApplicationController
   def create
     @yoga_class = YogaClass.new(yoga_class_params)
 
-    @yoga_class.save
-    redirect_to @yoga_class
+    if @yoga_class.save
+      redirect_to @yoga_class
+    else
+      render template: 'yoga_classes/new'
+    end
   end
   def show
     @yoga_class = YogaClass.find(params[:id])
