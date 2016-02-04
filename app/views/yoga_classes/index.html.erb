@@ -5,7 +5,8 @@
   <% end %>
 
 <% @yoga_classes.each do |yoga| %>
-  <%= yoga.date %> <%= yoga.time %> <a href='/yoga_classes/<%= yoga.id %>'
+  <%= yoga.date %> <a href='/yoga_classes/<%= yoga.id %>'> View Class </a>
+  <br>
 <% end %>
 
 
