@@ -17,9 +17,9 @@ class YogaClassesController < ApplicationController
   def new
   end
 
-  private 
+  private
     def yoga_class_params
-      params.require(:yoga_class).permit(:date, :time, :size)
+      params.require(:yoga_class).permit(:date, :size)
     end
 
 end
