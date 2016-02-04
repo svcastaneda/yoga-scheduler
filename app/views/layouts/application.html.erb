@@ -7,6 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header>
+		<% if current_user -%>
+			<form action="/logout" method="get">
+				<input type="hidden" name="_method" value="delete">
+				<p><input type="submit" value="logout"></p>
+			</form>
+		<% else %>
+			<a href="/login">login</a>
+			<a href="/users/new">register</a>
+		<% end %>
+	</header>
 
 <%= yield %>
 
