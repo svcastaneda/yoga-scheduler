@@ -1,0 +1,21 @@
+<div id="heading">
+  <h1>
+    Welcome to the DBC Yoga Scheduler
+  </h1>
+</div>
+
+<div class="container">
+  <% if @yoga_classes.empty? %>
+    <h2>No classes scheduled. Please check back</h2>
+    <% end %>
+
+  <% @yoga_classes.each do |yoga_class| %>
+    <%= render partial: "yoga_classes/class_layout", locals: {yoga_class: yoga_class} %>
+  <% end %>
+
+
+<!-- Insert check here to limit ability to create class to certain users -->
+  <br>
+  <a href='/yoga_classes/new'>Create a new class</a>
+</div>
+

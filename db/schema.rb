@@ -22,4 +22,12 @@ ActiveRecord::Schema.define(version: 20160204195837) do
     t.string   "password_digest"
   end
 
+  create_table "yoga_classes", force: :cascade do |t|
+    t.date     "date",       null: false
+    t.integer  "size",       null: false
+    t.string   "teacher"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end

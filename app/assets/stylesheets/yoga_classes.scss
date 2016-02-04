@@ -1,0 +1,30 @@
+// Place all the styles related to the yoga_classes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#heading {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  height: 80px;
+	z-index: -1;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 0px;
+  position: relative;
+  top: 80px;
+  text-align: center
+}
+
+.yoga_class {
+  width: 32%;
+  display: inline-block;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

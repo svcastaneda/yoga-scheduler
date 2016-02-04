@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   get 'sessions/index'
 
-  get 'users/index'
+  # get 'users/index'
+  root 'yoga_classes#index'
+  resources :yoga_classes
+
+  # get 'yoga_classes/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -57,7 +61,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  root to: "home#index"
   
   get    '/users/new', to: 'users#new'
   post   '/users', to: 'users#create'
