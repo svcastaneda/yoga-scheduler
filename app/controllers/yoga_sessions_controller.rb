@@ -1,0 +1,2 @@
+class YogaSessionsController < ApplicationController
+end

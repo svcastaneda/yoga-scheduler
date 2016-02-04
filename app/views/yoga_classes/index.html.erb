@@ -19,3 +19,6 @@
   <a href='/yoga_classes/new'>Create a new class</a>
 </div>
 
+<% if @errors %>
+	<%= render 'errors/errors', locals: {errors: @errors} %>
+<% end %>
