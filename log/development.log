@@ -4542,3 +4542,35 @@ ActionController::RoutingError (No route matches [GET] "/yoga_class/2/sessions/n
   Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
   Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
   Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (53.9ms)
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:31:56 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (6.6ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.5ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 294ms (Views: 283.3ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/assets/yoga_classes.self-f599ee96c23bd15a119b64c0e7a2723d2b2ac522d85ddf6681f2c10976b0c90a.css?body=1" for ::1 at 2016-02-04 14:31:56 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:31:56 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:31:56 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:31:56 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:31:56 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:31:56 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:31:56 -0600
