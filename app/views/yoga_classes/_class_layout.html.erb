@@ -1,0 +1,11 @@
+<div class="yoga_class">
+  <h3> <%= yoga_class.date %> </h3>
+  <p> Required slots filled: 8 </p>
+  <p> Optional slots filled: 12 </p>
+  <p> Open slots: 2 </p>
+  <a href="/yoga_class/<%=yoga_class.id%>/sessions/new">Sign up for this class </a>
+  <!-- switch over when sessions is built -->
+  <!-- <p> Required slots filled:  yoga_class.sessions.where(required: true).count  </p>
+  <p> Optional slots filled:  yoga_class.sessions.where(required: false).count  </p>
+  <p> Open slots:  yoga_class.size - yoga_class.sessions.count  </p> -->
+</div>

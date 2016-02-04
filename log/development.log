@@ -2084,3 +2084,2461 @@ Processing by YogaClassesController#show as HTML
   [1m[35mYogaClass Load (0.1ms)[0m  SELECT  "yoga_classes".* FROM "yoga_classes" WHERE "yoga_classes"."id" = ? LIMIT 1  [["id", 2]]
   Rendered yoga_classes/show.html.erb within layouts/application (0.2ms)
 Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 13:13:37 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.9ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 61ms (Views: 57.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:34:10 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:39:34 -0600
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: :index` to `controller: :index`. (called from block in <top (required)> at /home/padyno/dbc/yoga-scheduler/config/routes.rb:2)
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.1ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (29.9ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (62.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:39:58 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:40:40 -0600
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: :index` to `controller: :index`. (called from block in <top (required)> at /home/padyno/dbc/yoga-scheduler/config/routes.rb:2)
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.3ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (26.1ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (50.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:40:50 -0600
+
+ArgumentError ('' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:41:06 -0600
+
+ActionController::RoutingError (uninitialized constant IndexController):
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.0) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:59:in `controller'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:38:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/padyno/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/padyno/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/padyno/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.3ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (51.3ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:41:33 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 59ms (Views: 50.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/yoga_classes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-04 13:41:33 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 13:41:33 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 13:41:33 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 13:41:33 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 13:41:34 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 13:41:34 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 13:41:34 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 13:42:20 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.5ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 13:42:21 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 13:42:21 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 13:42:21 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 13:42:21 -0600
+
+
+Started GET "/assets/yoga_classes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-04 13:42:21 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 13:42:21 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 13:42:21 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 13:48:24 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (5.2ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 38ms
+
+SyntaxError (/home/padyno/dbc/yoga-scheduler/app/views/yoga_classes/_class_layout.html.erb:1: syntax error, unexpected '='
+...buffer = @output_buffer;class = class = local_assigns[:class...
+...                               ^):
+  app/views/yoga_classes/_class_layout.html.erb:1: syntax error, unexpected '='
+  app/views/yoga_classes/index.html.erb:8:in `block in _app_views_yoga_classes_index_html_erb__3166367659463007393_70083707024560'
+  app/views/yoga_classes/index.html.erb:7:in `_app_views_yoga_classes_index_html_erb__3166367659463007393_70083707024560'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (29.0ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (58.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:48:53 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.5ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (3.0ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 15ms
+
+SyntaxError (/home/padyno/dbc/yoga-scheduler/app/views/yoga_classes/_class_layout.html.erb:1: syntax error, unexpected '='
+...buffer = @output_buffer;class = class = local_assigns[:class...
+...                               ^
+/home/padyno/dbc/yoga-scheduler/app/views/yoga_classes/_class_layout.html.erb:2: syntax error, unexpected '.'
+...;@output_buffer.append=( class.date );@output_buffer.safe_ap...
+...                               ^):
+  app/views/yoga_classes/_class_layout.html.erb:1: syntax error, unexpected '='
+  app/views/yoga_classes/_class_layout.html.erb:2: syntax error, unexpected '.'
+  app/views/yoga_classes/index.html.erb:8:in `block in _app_views_yoga_classes_index_html_erb__3166367659463007393_70083707024560'
+  app/views/yoga_classes/index.html.erb:7:in `_app_views_yoga_classes_index_html_erb__3166367659463007393_70083707024560'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.3ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.9ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.3ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (49.3ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:49:03 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (1.5ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/home/padyno/dbc/yoga-scheduler/app/views/yoga_classes/_class_layout.html.erb:1: syntax error, unexpected '='
+...buffer = @output_buffer;class = class = local_assigns[:class...
+...                               ^
+/home/padyno/dbc/yoga-scheduler/app/views/yoga_classes/_class_layout.html.erb:2: syntax error, unexpected '.'
+...;@output_buffer.append=( class.date );@output_buffer.safe_ap...
+...                               ^):
+  app/views/yoga_classes/_class_layout.html.erb:1: syntax error, unexpected '='
+  app/views/yoga_classes/_class_layout.html.erb:2: syntax error, unexpected '.'
+  app/views/yoga_classes/index.html.erb:8:in `block in _app_views_yoga_classes_index_html_erb__3166367659463007393_70083707024560'
+  app/views/yoga_classes/index.html.erb:7:in `_app_views_yoga_classes_index_html_erb__3166367659463007393_70083707024560'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.2ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (49.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:50:16 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/index.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (undefined local variable or method `yoga' for #<#<Class:0x007f7b44ab7c70>:0x007f7b5a3e8820>):
+     5:   <% end %>
+     6: 
+     7: <% @yoga_classes.each do |yoga_class| %>
+     8:   <%= render partial: "yoga_classes/class_layout", locals: {yoga_class: yoga} %>
+     9:   <%= yoga_class.date %> <a href='/yoga_classes/<%= yoga.id %>'> View Class </a>
+    10:   <br>
+    11: <% end %>
+  app/views/yoga_classes/index.html.erb:8:in `block in _app_views_yoga_classes_index_html_erb__3166367659463007393_70083884840200'
+  app/views/yoga_classes/index.html.erb:7:in `_app_views_yoga_classes_index_html_erb__3166367659463007393_70083884840200'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.2ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.9ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (50.7ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:50:29 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (1.9ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 12ms
+
+SyntaxError (/home/padyno/dbc/yoga-scheduler/app/views/yoga_classes/_class_layout.html.erb:2: syntax error, unexpected '.'
+...;@output_buffer.append=( class.date );@output_buffer.safe_ap...
+...                               ^):
+  app/views/yoga_classes/_class_layout.html.erb:2: syntax error, unexpected '.'
+  app/views/yoga_classes/index.html.erb:8:in `block in _app_views_yoga_classes_index_html_erb__3166367659463007393_70083744997780'
+  app/views/yoga_classes/index.html.erb:7:in `_app_views_yoga_classes_index_html_erb__3166367659463007393_70083744997780'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.0ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.3ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (49.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:50:50 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (1.8ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.8ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (32.9ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (undefined local variable or method `yoga' for #<#<Class:0x007f7b44ab7c70>:0x000000048c8328>):
+     6: 
+     7: <% @yoga_classes.each do |yoga_class| %>
+     8:   <%= render partial: "yoga_classes/class_layout", locals: {yoga_class: yoga_class} %>
+     9:   <%= yoga_class.date %> <a href='/yoga_classes/<%= yoga.id %>'> View Class </a>
+    10:   <br>
+    11: <% end %>
+    12: 
+  app/views/yoga_classes/index.html.erb:9:in `block in _app_views_yoga_classes_index_html_erb__3166367659463007393_70083744997780'
+  app/views/yoga_classes/index.html.erb:7:in `_app_views_yoga_classes_index_html_erb__3166367659463007393_70083744997780'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (54.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:51:02 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (4.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 101ms (Views: 95.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/yoga_classes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-04 13:51:02 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 13:51:02 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 13:51:02 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 13:51:02 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 13:51:02 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 13:51:02 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 13:51:02 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 13:52:09 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/yoga_classes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-04 13:52:09 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 13:52:09 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 13:52:09 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 13:52:09 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 13:52:09 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 13:52:09 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 13:52:09 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 13:56:12 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (42.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (46.8ms)
+Completed 500 Internal Server Error in 52ms
+
+ActionView::Template::Error (uninitialized constant YogaClass::Session):
+    1: <div class="yoga_class">
+    2:   <h3> <%= yoga_class.date %> </h3>
+    3:   <p> Required slots filled: <%= yoga_class.sessions.where(required: true).count %> </p>
+    4:   <p> Optional slots filled: <%= yoga_class.sessions.where(required: false).count %> </p>
+    5:   <p> Open slots </p>
+    6: </div>
+  app/views/yoga_classes/_class_layout.html.erb:3:in `_app_views_yoga_classes__class_layout_html_erb___2505805805880395101_70083741023280'
+  app/views/yoga_classes/index.html.erb:12:in `block in _app_views_yoga_classes_index_html_erb__3166367659463007393_70083743571800'
+  app/views/yoga_classes/index.html.erb:11:in `_app_views_yoga_classes_index_html_erb__3166367659463007393_70083743571800'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.1ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.9ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (54.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:57:18 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (9.5ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (uninitialized constant YogaClass::Session):
+    1: <div class="yoga_class">
+    2:   <h3> <%= yoga_class.date %> </h3>
+    3:   <p> Required slots filled: <%= yoga_class.sessions.where(required: true).count %> </p>
+    4:   <p> Optional slots filled: <%= yoga_class.sessions.where(required: false).count %> </p>
+    5:   <p> Open slots: <%= yoga_class.size - yoga_class.sessions.count %> </p>
+    6: </div>
+  app/views/yoga_classes/_class_layout.html.erb:3:in `_app_views_yoga_classes__class_layout_html_erb___2505805805880395101_70083636983320'
+  app/views/yoga_classes/index.html.erb:12:in `block in _app_views_yoga_classes_index_html_erb__3166367659463007393_70083743571800'
+  app/views/yoga_classes/index.html.erb:11:in `_app_views_yoga_classes_index_html_erb__3166367659463007393_70083743571800'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.3ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (49.3ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:58:13 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (7.9ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (uninitialized constant YogaClass::Session):
+    4:   <p> Optional slots filled: 12 </p>
+    5:   <p> Open slots: 2 </p>
+    6:   <!-- switch over when sessions is built -->
+    7:   <!-- <p> Required slots filled: <%= yoga_class.sessions.where(required: true).count %> </p>
+    8:   <p> Optional slots filled: <%= yoga_class.sessions.where(required: false).count %> </p>
+    9:   <p> Open slots: <%= yoga_class.size - yoga_class.sessions.count %> </p> -->
+   10: </div>
+  app/views/yoga_classes/_class_layout.html.erb:7:in `_app_views_yoga_classes__class_layout_html_erb___2505805805880395101_70083743353500'
+  app/views/yoga_classes/index.html.erb:12:in `block in _app_views_yoga_classes_index_html_erb__3166367659463007393_70083743571800'
+  app/views/yoga_classes/index.html.erb:11:in `_app_views_yoga_classes_index_html_erb__3166367659463007393_70083743571800'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.0ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (50.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 13:58:57 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.6ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 13:58:57 -0600
+
+
+Started GET "/assets/yoga_classes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-04 13:58:57 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 13:58:57 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 13:58:57 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 13:58:57 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 13:58:57 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 13:58:57 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:01:19 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 88ms (Views: 87.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-c638565c3afcc1fa76a717fb413c314d6990312dd1070cc870bea92324231107.css?body=1" for ::1 at 2016-02-04 14:01:19 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:01:19 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:01:19 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:01:19 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:01:19 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:01:19 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:01:19 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:01:33 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 63ms (Views: 61.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:01:33 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:01:33 -0600
+
+
+Started GET "/assets/yoga_classes.self-9e3d3b6b6402715676845fde28aad40206115a5f361b0f2667001e49df3f6467.css?body=1" for ::1 at 2016-02-04 14:01:33 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:01:33 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:01:33 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:01:33 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:01:33 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:01:42 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/yoga_classes.self-f7bb9f5d46885fd4293e02a12719fddea18fa0f6b95b88d1577a6455e0b71233.css?body=1" for ::1 at 2016-02-04 14:01:42 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:01:42 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:01:42 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:01:42 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:01:42 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:01:42 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:01:42 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:02:54 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.5ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (40.2ms)
+Completed 500 Internal Server Error in 70ms
+
+ActionView::Template::Error (Invalid CSS after "  margin": expected ";", was ": auto;"):
+    2: <html>
+    3: <head>
+    4:   <title>Yoga</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/yoga_classes.scss:16
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3440195626434757892_36489740'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.1ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (26.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (54.9ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 14:03:21 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 71ms (Views: 69.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-dcdb1d220f1d9e97aae1c8980cb3a9226b55e74e109666f3e169f42d6edfa2fa.css?body=1" for ::1 at 2016-02-04 14:03:22 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:03:22 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:03:22 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:03:22 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:03:22 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:03:22 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:03:22 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:04:47 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (Invalid CSS after "  top:": expected expression (e.g. 1px, bold), was "}"):
+    2: <html>
+    3: <head>
+    4:   <title>Yoga</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/yoga_classes.scss:21
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3440195626434757892_36489740'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (50.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 14:04:58 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 65ms (Views: 64.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/yoga_classes.self-ac21ffc3a05e7b9954d2de34e6ddbd5ca7b7082422375918e6956f15f1339111.css?body=1" for ::1 at 2016-02-04 14:04:58 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:04:58 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:04:58 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:04:58 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:04:58 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:04:58 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:04:58 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:05:09 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/yoga_classes.self-a8011e823c15c84d40b00c56c98a3cf1197a7d829272d608726090c68e983a47.css?body=1" for ::1 at 2016-02-04 14:05:09 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:05:09 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:05:09 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:05:09 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:05:09 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:05:09 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:05:09 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:05:21 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-536650bdc253fa2911e2a13ef5edad9a64e6fcddfc71e9133bb5159653f5b1dc.css?body=1" for ::1 at 2016-02-04 14:05:21 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:05:21 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:05:21 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:05:21 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:05:21 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:05:21 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:05:21 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:05:35 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (Invalid CSS after "  margin-right": expected ";", was ": auto;"):
+    2: <html>
+    3: <head>
+    4:   <title>Yoga</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/yoga_classes.scss:17
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3440195626434757892_36489740'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.0ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.2ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (50.8ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 14:05:51 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (Invalid CSS after "  margin-left": expected "{", was ";"):
+    2: <html>
+    3: <head>
+    4:   <title>Yoga</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/yoga_classes.scss:18
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3440195626434757892_36489740'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.9ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (51.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 14:08:35 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (Invalid CSS after "  margin": expected ";", was ": 0 auto 0 auto;"):
+    2: <html>
+    3: <head>
+    4:   <title>Yoga</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/yoga_classes.scss:17
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3440195626434757892_36489740'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.0ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (58.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 14:08:49 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.4ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (Invalid CSS after "  margin": expected ";", was ": { 0 auto 0 au..."):
+    2: <html>
+    3: <head>
+    4:   <title>Yoga</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/yoga_classes.scss:17
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3440195626434757892_36489740'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.1ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.3ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.9ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.9ms)
+
+
+Started GET "/" for ::1 at 2016-02-04 14:09:14 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (1.8ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 77ms (Views: 74.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/yoga_classes.self-80c33a44563aa0b7ac2cbf354b900726a8fa09bc63e9ec874593944a0299e2d2.css?body=1" for ::1 at 2016-02-04 14:09:14 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:09:14 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:09:14 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:09:14 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:09:14 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:09:14 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:09:14 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:09:40 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/yoga_classes.self-9fc8ebb380e9f97a517b3ee6650ea51fe7b9024f7a514947fbc7573f13ce1904.css?body=1" for ::1 at 2016-02-04 14:09:40 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:09:40 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:09:40 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:09:40 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:09:40 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:09:40 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:09:40 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:09:43 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-9fc8ebb380e9f97a517b3ee6650ea51fe7b9024f7a514947fbc7573f13ce1904.css?body=1" for ::1 at 2016-02-04 14:09:43 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:09:43 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:09:43 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:09:43 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:09:43 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:09:43 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:09:43 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:10:05 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/yoga_classes.self-84cb2bd9d31563fbd8e7553f64215ee2eae903a48c299bd6198e38753d323ddd.css?body=1" for ::1 at 2016-02-04 14:10:05 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:10:05 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:10:05 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:10:05 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:10:05 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:10:05 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:10:05 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:10:07 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-84cb2bd9d31563fbd8e7553f64215ee2eae903a48c299bd6198e38753d323ddd.css?body=1" for ::1 at 2016-02-04 14:10:07 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:10:07 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:10:07 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:10:07 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:10:07 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:10:07 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:10:07 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:11:17 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.3ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 93ms (Views: 91.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/yoga_classes.self-e7b12a83bd49aceaf9329aec2f57f88750df09e9465b74f8f6ded4bac8decf3a.css?body=1" for ::1 at 2016-02-04 14:11:17 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:11:17 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:11:18 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:11:18 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:11:18 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:11:18 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:11:18 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:11:26 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-1a7f7cfba9f0adf76a1119d5af874fc58a3c5e55b3bcb131be89a70ed273d864.css?body=1" for ::1 at 2016-02-04 14:11:27 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:11:27 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:11:27 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:11:27 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:11:27 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:11:27 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:11:27 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:11:42 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.6ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/yoga_classes.self-b68db8eeb77bb67890fd20d8b1408ef19cfe80d70ff985f44e9b1d0e43751d9c.css?body=1" for ::1 at 2016-02-04 14:11:42 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:11:42 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:11:42 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:11:42 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:11:42 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:11:42 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:11:42 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:11:53 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 70ms (Views: 68.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/yoga_classes.self-770b22c530ad8323838a8db1394278067c1ce6cdb32ddb20b9d68d18cff757d1.css?body=1" for ::1 at 2016-02-04 14:11:53 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:11:53 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:11:53 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:11:53 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:11:53 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:11:53 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:11:53 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:12:46 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 61ms (Views: 60.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-a8af598627bd04042a4daf6a9c173d978a3b88f5c6a49495a7ef198bc384e141.css?body=1" for ::1 at 2016-02-04 14:12:47 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:12:47 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:12:47 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:12:47 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:12:47 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:12:47 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:12:47 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:13:22 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.4ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 73ms (Views: 70.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/yoga_classes.self-cf052832b8cba107f3deffcc3be0c28313c4674159c7bbb247d7e34d01ec0466.css?body=1" for ::1 at 2016-02-04 14:13:23 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:13:23 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:13:23 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:13:23 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:13:23 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:13:23 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:13:23 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:13:52 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/yoga_classes.self-cf052832b8cba107f3deffcc3be0c28313c4674159c7bbb247d7e34d01ec0466.css?body=1" for ::1 at 2016-02-04 14:13:52 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:13:52 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:13:52 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:13:52 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:13:52 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:13:52 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:13:52 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:14:15 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-cf052832b8cba107f3deffcc3be0c28313c4674159c7bbb247d7e34d01ec0466.css?body=1" for ::1 at 2016-02-04 14:14:15 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:14:15 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:14:15 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:14:15 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:14:15 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:14:15 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:14:15 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:14:22 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 79ms (Views: 78.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-3b72197cf1204138384939b2f130df70c572852fa81f4517768258669e837e6c.css?body=1" for ::1 at 2016-02-04 14:14:23 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:14:23 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:14:23 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:14:23 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:14:23 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:14:23 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:14:23 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:14:31 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-cf052832b8cba107f3deffcc3be0c28313c4674159c7bbb247d7e34d01ec0466.css?body=1" for ::1 at 2016-02-04 14:14:31 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:14:31 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:14:31 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:14:31 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:14:31 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:14:31 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:14:31 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:15:01 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/yoga_classes.self-732b7b68276ed96547c9e90e1c2b8e52c60d12cad0757eb79ee7962a244d9b54.css?body=1" for ::1 at 2016-02-04 14:15:01 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:15:01 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:15:01 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:15:01 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:15:01 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:15:01 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:15:01 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:15:13 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/yoga_classes.self-42dba8498df6038988d5fa37a5871fa78ec9a11c1f5779474402fe9beefbe15d.css?body=1" for ::1 at 2016-02-04 14:15:13 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:15:13 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:15:13 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:15:13 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:15:13 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:15:13 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:15:13 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:16:15 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/yoga_classes.self-42dba8498df6038988d5fa37a5871fa78ec9a11c1f5779474402fe9beefbe15d.css?body=1" for ::1 at 2016-02-04 14:16:16 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:16:16 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:16:16 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:16:16 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:16:16 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:16:16 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:16:16 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:16:51 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.3ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.3ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-91e73adf7350509ca64a805cb9834bbc4bf6fb02fcb62cf765ee9d4350b581da.css?body=1" for ::1 at 2016-02-04 14:16:52 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:16:52 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:16:52 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:16:52 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:16:52 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:16:52 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:16:52 -0600
+
+
+Started GET "/" for ::1 at 2016-02-04 14:17:01 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-aa92859d66116c04d5552dc3b6f7aeb0d05c3d0713ad1cf544b5875635278e32.css?body=1" for ::1 at 2016-02-04 14:17:02 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:17:02 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:17:02 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:17:02 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:17:02 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:17:02 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:17:02 -0600
+
+
+Started GET "/yoga_classes/new" for ::1 at 2016-02-04 14:18:12 -0600
+Processing by YogaClassesController#new as HTML
+  Rendered yoga_classes/new.erb within layouts/application (8.9ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/yoga_classes" for ::1 at 2016-02-04 14:18:19 -0600
+Processing by YogaClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xDSpIX3BrLLp6XNTRET8s7SJzGF0qySCZz3qwtAUN2rwCz4LKSshggdcmTfloMQq+m4jjNm7YFwgP/Vi5s2XlA==", "yoga_class"=>{"date(1i)"=>"2016", "date(2i)"=>"2", "date(3i)"=>"8", "time(1i)"=>"2016", "time(2i)"=>"2", "time(3i)"=>"4", "time(4i)"=>"20", "time(5i)"=>"18", "size"=>"12", "teacher"=>""}, "commit"=>"Save Yoga class"}
+Unpermitted parameter: teacher
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  INSERT INTO "yoga_classes" ("size", "date", "time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["size", 12], ["date", "2016-02-08"], ["time", "2016-02-04 20:18:00.000000"], ["created_at", "2016-02-04 20:18:19.183660"], ["updated_at", "2016-02-04 20:18:19.183660"]]
+  [1m[36m (12.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/yoga_classes/3
+Completed 302 Found in 27ms (ActiveRecord: 16.8ms)
+
+
+Started GET "/yoga_classes/3" for ::1 at 2016-02-04 14:18:19 -0600
+Processing by YogaClassesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT  "yoga_classes".* FROM "yoga_classes" WHERE "yoga_classes"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered yoga_classes/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:18:22 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.7ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:18:31 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:18:31 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:18:31 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:18:31 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:18:31 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:18:31 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:18:31 -0600
+
+
+Started GET "/assets/yoga_classes.self-aa92859d66116c04d5552dc3b6f7aeb0d05c3d0713ad1cf544b5875635278e32.css?body=1" for ::1 at 2016-02-04 14:18:31 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:20:02 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.5ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (1.5ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 42ms (Views: 36.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/yoga_classes.self-aa92859d66116c04d5552dc3b6f7aeb0d05c3d0713ad1cf544b5875635278e32.css?body=1" for ::1 at 2016-02-04 14:20:02 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:20:02 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:20:02 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:20:02 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:20:02 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:20:02 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:20:02 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:21:27 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.3ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-5a412a382a9f22721e799444a550d0b8de0aa094e14aaa0c3341f8984d708048.css?body=1" for ::1 at 2016-02-04 14:21:27 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:21:27 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:21:27 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:21:27 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:21:27 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:21:27 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:21:27 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:21:53 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/yoga_classes.self-ffe81515fc7d23b37faacf4e4d02c5ce74198587cb35eced091c77a8de9d8801.css?body=1" for ::1 at 2016-02-04 14:21:54 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:21:54 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:21:54 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:21:54 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:21:54 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:21:54 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:21:54 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:22:27 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 81ms (Views: 79.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-f6927a85440a68898ebf202e8d9b6bc01e7d8898e777914198870e1928a8023c.css?body=1" for ::1 at 2016-02-04 14:22:28 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:22:28 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:22:28 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:22:28 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:22:28 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:22:28 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:22:28 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:22:45 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/yoga_classes.self-f6927a85440a68898ebf202e8d9b6bc01e7d8898e777914198870e1928a8023c.css?body=1" for ::1 at 2016-02-04 14:22:46 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:22:46 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:22:46 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:22:46 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:22:46 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:22:46 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:22:46 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:23:01 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-a40140a59b380628180acf71a8676826be80e5b8fd4f4b46b32ac9ce3bd5b8a5.css?body=1" for ::1 at 2016-02-04 14:23:01 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:23:01 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:23:01 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:23:01 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:23:01 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:23:01 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:23:01 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:23:13 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.3ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-306fc207e21bb55ceb60b782a0f6419a8af24ea05885fe0fe637714c46e032b3.css?body=1" for ::1 at 2016-02-04 14:23:13 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:23:13 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:23:13 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:23:13 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:23:13 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:23:13 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:23:13 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:23:26 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 82ms (Views: 80.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-deb7f228a65e93e21adea00a890f916a2be539f9b3c860230e3329c987e2e1c5.css?body=1" for ::1 at 2016-02-04 14:23:26 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:23:26 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:23:26 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:23:26 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:23:26 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:23:26 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:23:26 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:23:38 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 81ms (Views: 79.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/yoga_classes.self-f356e1757e3653f1b33fc23ff71c9a321e26d1eb37965f103026f6a50b7f7d47.css?body=1" for ::1 at 2016-02-04 14:23:38 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:23:38 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:23:38 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:23:38 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:23:38 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:23:38 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:23:38 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:23:46 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (2.3ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.3ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 77ms (Views: 75.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/yoga_classes.self-772184121ecbc96c03fef8f5f032878267ac3b837ad4deff87450b35021a15b0.css?body=1" for ::1 at 2016-02-04 14:23:46 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:23:46 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:23:46 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:23:46 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:23:46 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:23:46 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:23:46 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:23:54 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.3ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 67ms (Views: 66.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/yoga_classes.self-3daa87b6fe010d2cae4809ab062718a62168143007ff56c1912bfd77e75bd458.css?body=1" for ::1 at 2016-02-04 14:23:54 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:23:54 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:23:54 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:23:54 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:23:54 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:23:54 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:23:54 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:24:00 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-48e862ac2830acd70beadc2f8387df0883b973f10868c6b9fb44b86637fef30c.css?body=1" for ::1 at 2016-02-04 14:24:00 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:24:00 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:24:00 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:24:01 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:24:01 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:24:01 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:24:01 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:24:14 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 64ms (Views: 62.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-f420ae80b06ca89f1da4e7d0d5ec1924b4b2866e51e08f976d33e93f52fa3b28.css?body=1" for ::1 at 2016-02-04 14:24:14 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:24:14 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:24:14 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:24:14 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:24:14 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:24:14 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:24:14 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:24:23 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:24:23 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:24:23 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:24:23 -0600
+
+
+Started GET "/assets/yoga_classes.self-f420ae80b06ca89f1da4e7d0d5ec1924b4b2866e51e08f976d33e93f52fa3b28.css?body=1" for ::1 at 2016-02-04 14:24:23 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:24:23 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:24:23 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:24:23 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:25:22 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.2ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.5ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:25:22 -0600
+
+
+Started GET "/assets/yoga_classes.self-f420ae80b06ca89f1da4e7d0d5ec1924b4b2866e51e08f976d33e93f52fa3b28.css?body=1" for ::1 at 2016-02-04 14:25:22 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:25:22 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:25:22 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:25:22 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:25:22 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:25:22 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:25:44 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.3ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 73ms (Views: 71.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/yoga_classes.self-cf4884ec5827c5d4cf1212e8f224fd00399ee9b0f5ef00e839f91ebd274d79af.css?body=1" for ::1 at 2016-02-04 14:25:44 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:25:44 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:25:44 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:25:44 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:25:44 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:25:44 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:25:44 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:25:56 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-cf4884ec5827c5d4cf1212e8f224fd00399ee9b0f5ef00e839f91ebd274d79af.css?body=1" for ::1 at 2016-02-04 14:25:56 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:25:56 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:25:56 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:25:56 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:25:56 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:25:56 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:25:56 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:26:07 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/yoga_classes.self-cf4884ec5827c5d4cf1212e8f224fd00399ee9b0f5ef00e839f91ebd274d79af.css?body=1" for ::1 at 2016-02-04 14:26:07 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:26:07 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:26:08 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:26:08 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:26:08 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:26:08 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:26:08 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:26:19 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/yoga_classes.self-f420ae80b06ca89f1da4e7d0d5ec1924b4b2866e51e08f976d33e93f52fa3b28.css?body=1" for ::1 at 2016-02-04 14:26:20 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:26:20 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:26:20 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:26:20 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:26:20 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:26:20 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:26:20 -0600
+
+
+Started GET "/yoga_classes" for ::1 at 2016-02-04 14:26:35 -0600
+Processing by YogaClassesController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "yoga_classes"[0m
+  [1m[35mYogaClass Load (0.2ms)[0m  SELECT "yoga_classes".* FROM "yoga_classes"
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/_class_layout.html.erb (0.1ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 64ms (Views: 63.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/yoga_classes.self-f599ee96c23bd15a119b64c0e7a2723d2b2ac522d85ddf6681f2c10976b0c90a.css?body=1" for ::1 at 2016-02-04 14:26:35 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-04 14:26:35 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-04 14:26:35 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-04 14:26:35 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-04 14:26:35 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-04 14:26:35 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-04 14:26:36 -0600
+
+
+Started GET "/yoga_class/2/sessions/new" for ::1 at 2016-02-04 14:27:18 -0600
+
+ActionController::RoutingError (No route matches [GET] "/yoga_class/2/sessions/new"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/padyno/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/padyno/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/padyno/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.0ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (58.2ms)
+
+
+Started GET "/yoga_class/2/sessions/new" for ::1 at 2016-02-04 14:27:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/yoga_class/2/sessions/new"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/padyno/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/padyno/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/padyno/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (26.3ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/padyno/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (53.9ms)

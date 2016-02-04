@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  root 'yoga_classes#index'
   resources :yoga_classes
-  
+
   # get 'yoga_classes/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
