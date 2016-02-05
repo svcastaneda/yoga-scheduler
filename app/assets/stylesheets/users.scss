@@ -1,3 +1,38 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+form {
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+}
+
+legend {
+	border-bottom: 2px solid black;
+	text-align: center;
+	font-weight: bold;
+	width: 100%;
+}
+
+form table td:last-child	{
+	padding-top: .5em;
+	text-align: center;
+}
+
+form input[type='submit'] {
+  text-decoration: none;
+  background-color: #00ABB6;
+  color: ghostwhite;
+  padding: 0.25em;
+  line-height: 2em;
+  border: 2px solid #828C91;
+  border-radius: 10px;
+	width: 100%;
+}
+
+form input[type='submit']:hover {
+	cursor: pointer;
+	background-color: #32bbc4;
+}

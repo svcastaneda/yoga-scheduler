@@ -1,22 +1,27 @@
 <%= form_for :yoga_class, url: yoga_classes_path do |f| %>
-  <p>
-    <%= f.label :date %><br>
-    <%= f.date_select :date %><br>
-  </p>
+<legend>Add New Class</legend>
+<table>
+  <tr>
+		<td><%= f.label :date %></td>
+    <td><%= f.date_select :date %></td>
+	</tr>
 
-  <p>
-    <%= f.label :size %><br>
-    <%= f.number_field :size %><br>
-  </p> 
+  <tr>
+		<td><%= f.label :size %></td>
+		<td><%= f.number_field :size %></td>
+	</tr> 
 
-  <p>
-    <%= f.label :teacher %><br>
-    <%= f.text_field :teacher %><br>
-  </p>
+  <tr>
+		<td><%= f.label :teacher %></td>
+		<td><%= f.text_field :teacher %></td>
+	</tr>
 
-  <p>
-    <%= f.submit %>
-  </p>
+  <tr>
+		<td colspan='2'>
+	    <%= f.submit %>
+	  </td>
+	</tr>
+</table>
 
 <% end %>
 
