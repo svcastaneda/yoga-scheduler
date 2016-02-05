@@ -3,7 +3,7 @@ class UserMailer < ApplicationMailer
 
   def welcome_email(user)
     @user = user
-    @url  = 'http://dbcyoga.com/login'
+    @url  = 'http://localhost:3000/'
     mail(to: @user.email, subject: 'Welcome to DBC Yoga :D')
   end
 end
