@@ -7,6 +7,11 @@ class UsersController < ApplicationController
   def new
   end
 
+  def edit
+    p params
+    # current_user.update_attributes(params[:user])
+  end
+  
   def create
     @user = User.new(user_params)
     if @user.save
@@ -22,6 +27,8 @@ class UsersController < ApplicationController
     user = User.find_by(id: params[:id])
     if user == current_user
       render template: 'users/show'
+    else
+      redirect_to '/500'
     end
   end
 
