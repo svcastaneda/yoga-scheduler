@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :weeks
+
   get 'sessions/index'
 
   # get 'users/index'
