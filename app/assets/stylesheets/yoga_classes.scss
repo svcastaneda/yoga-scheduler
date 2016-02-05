@@ -2,22 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#heading {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  text-align: center;
-  height: 80px;
-	z-index: -1;
-}
-
 .container {
   width: 80%;
   margin: auto;
-  margin-top: 0px;
-  position: relative;
-  top: 80px;
   text-align: center
 }
 
@@ -32,6 +19,17 @@
 	border-radius: 10px;
 }
 
+.container a:link, .container a:visited, .container input {
+  text-decoration: none;
+  background-color: #00ABB6;
+  color: ghostwhite;
+  padding: 0.25em;
+  line-height: 2em;
+  border: 2px solid #828C91;
+  border-radius: 10px;
+  font-weight: 900;
+}
+
 .yoga_class h3 {
 	width: 100%;
 	background-color: lightgrey;
@@ -41,3 +39,4 @@
 	border-top-left-radius: 8px;
 	border-bottom: 1px solid #828C91;
 }
+
