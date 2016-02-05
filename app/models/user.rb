@@ -11,4 +11,8 @@ class User < ActiveRecord::Base
 
   has_many :yoga_sessions
   has_many :yoga_classes, through: :yoga_sessions
+  
+  def registered_upcoming_yoga_classes
+    yoga_classes.order(date: :desc).where('date >= ?', Date.today)
+  end
 end
