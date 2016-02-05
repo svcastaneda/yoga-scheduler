@@ -1,7 +1,7 @@
 class YogaSessionsController < ApplicationController
 # skip_before_filter  :verify_authenticity_token
   def create
-    user_id = session[:user_id]
+    user_id = 1
     class_id = params[:yoga_class_id]
     if YogaSession.where(user_id: user_id, yoga_class_id: class_id).empty?
       @yoga_session = YogaSession.new({user_id: user_id, yoga_class_id: class_id})
