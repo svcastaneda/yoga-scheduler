@@ -1,0 +1,17 @@
+<% if current_user.yoga_classes.empty? %>
+	<p>not registered for any upcoming classes.</p>
+<% else %>
+	<h3>Upcoming Classes</h3>
+	<table>
+		<tr>
+			<th>Date</th>
+			<th>Registered People</th>
+		</tr>
+		<% current_user.registered_upcoming_yoga_classes.each do |yoga_class| %>
+			<tr>
+				<td><%= yoga_class.date %></td>
+				<td><%= yoga_class.yoga_sessions.count %></td>
+			</tr>
+		<% end %>
+	</table>
+<% end %>
