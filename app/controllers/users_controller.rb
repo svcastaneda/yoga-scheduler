@@ -11,10 +11,11 @@ class UsersController < ApplicationController
     p params
     # current_user.update_attributes(params[:user])
   end
-  
+
   def create
     @user = User.new(user_params)
     if @user.save
+      UserMailer.welcome_email(@user).deliver_later
       session[:user_id] = @user.id
       redirect_to '/'
     else
