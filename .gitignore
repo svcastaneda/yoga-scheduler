@@ -1,1 +1,5 @@
 Rakefile
+tmp/cache
+tmp/pids/server.pid
+log/development.log
+db/development.sqlite3
