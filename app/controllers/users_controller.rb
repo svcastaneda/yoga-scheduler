@@ -1,12 +1,12 @@
 class UsersController < ApplicationController
   protect_from_forgery
-  
+
   def index
   end
-  
+
   def new
   end
-  
+
   def create
     @user = User.new(user_params)
     if @user.save
@@ -17,19 +17,19 @@ class UsersController < ApplicationController
       render template: 'users/new'
     end
   end
-  
+
   def show
     user = User.find_by(id: params[:id])
     if user == current_user
       render template: 'users/show'
     end
   end
-  
+
   private
   def user_params
     params.require(:user).permit(:first_name, :last_name, :email, :password)
   end
-  
+
   def current_user
     User.find_by(id: session[:user_id])
   end
