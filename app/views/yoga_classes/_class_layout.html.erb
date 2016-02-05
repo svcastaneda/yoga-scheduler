@@ -1,9 +1,13 @@
 <div class="yoga_class">
   <h3> <%= yoga_class.date %> </h3>
-  <p> Required slots filled: 8 </p>
-  <p> Optional slots filled: 12 </p>
-  <p> Open slots: 2 </p>
-  <a href="/yoga_class/<%=yoga_class.id%>/sessions/new">Sign up for this class </a>
+  <p> Required slots filled: <%= yoga_class.yoga_sessions.count %> </p>
+  <p> Open slots: <%= yoga_class.size - yoga_class.yoga_sessions.count %> </p>
+  <% if session[:user_id] && !yoga_class.yoga_sessions.exists?(user_id: session[:user_id])%>
+  <form action="/yoga_classes/<%=yoga_class.id%>/yoga_sessions" method='post'>
+    <input name="authenticity_token" type="hidden" value="token_value">
+    <input type="submit" value="Sign Up for this Class">
+  </form>
+  <% end %>
   <!-- switch over when sessions is built -->
   <!-- <p> Required slots filled:  yoga_class.sessions.where(required: true).count  </p>
   <p> Optional slots filled:  yoga_class.sessions.where(required: false).count  </p>
