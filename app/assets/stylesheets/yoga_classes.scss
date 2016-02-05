@@ -24,7 +24,20 @@
 .yoga_class {
   width: 32%;
   display: inline-block;
-  margin: auto;
-  margin-top: 8px;
-  margin-bottom: 8px;
+	margin: 1em 0.5em;
+	padding-bottom: 1em;
+	padding-top: 0;
+	background-color: azure;
+	border: 2px solid #00ABB6;
+	border-radius: 10px;
+}
+
+.yoga_class h3 {
+	width: 100%;
+	background-color: lightgrey;
+	margin: 0;
+	padding: 1em 0;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border-bottom: 1px solid #828C91;
 }
