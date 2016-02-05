@@ -11,7 +11,7 @@
 	<header>
 		<nav>
 			<% if current_user -%>
-				<a href="/users/<%= current_user.id %>/settings"><%= image_tag("settings.png", size: "12x12") %></a>
+				<!-- <a href="/users/<%= current_user.id %>/settings"><%= image_tag("settings.png", size: "12x12") %></a> -->
 				<a href="/users/<%= current_user.id -%>">classes</a>
 				<form action="/logout" method="get">
 					<input type="hidden" name="_method" value="delete">
