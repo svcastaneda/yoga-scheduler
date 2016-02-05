@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Hey, <%= @user.first_name %></h1>
+    <p>
+      You have successfully signed up for a class at DBC Yoga,
+      your yoga date is: <%= @yoga_session.yoga_class.date %>.<br>
+    </p>
+    <p>
+      To login to the site, just follow this link: <%= @url %>.
+    </p>
+    <p>Thanks for signing up, we expect to see you there, dont be late or Baker will be mad, bringy our own mat, we ran out.</p>
+  </body>
+</html>
