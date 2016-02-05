@@ -2,7 +2,7 @@
   <h3> <%= yoga_class.date %> </h3>
   <p> Required slots filled: <%= yoga_class.yoga_sessions.count %> </p>
   <p> Open slots: <%= yoga_class.size - yoga_class.yoga_sessions.count %> </p>
-  <% if session[:user_id] %>
+  <% if session[:user_id] && !yoga_class.yoga_sessions.exists?(user_id: session[:user_id])%>
   <form action="/yoga_classes/<%=yoga_class.id%>/yoga_sessions" method='post'>
     <input name="authenticity_token" type="hidden" value="token_value">
     <input type="submit" value="Sign Up for this Class">
