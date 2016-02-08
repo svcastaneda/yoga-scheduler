@@ -6,7 +6,7 @@ class YogaSessionsController < ApplicationController
     if YogaSession.where(user_id: @user.id, yoga_class_id: class_id).empty?
       @yoga_session = YogaSession.new({user_id: @user.id, yoga_class_id: class_id})
       if @yoga_session.save
-        UserMailer.signup_email(@user, @yoga_session).deliver_later
+        # UserMailer.signup_email(@user, @yoga_session).deliver_later
         redirect_to '/'
       else
         @errors = @yoga_session.errors.full_messages
