@@ -1,6 +1,6 @@
 class YogaClassesController < ApplicationController
   def index
-    @yoga_classes = YogaClass.all
+    @yoga_classes = YogaClass.all.order(date: :asc).where('date >= ?', Date.today)
   end
   def create
     @yoga_class = YogaClass.new(yoga_class_params)

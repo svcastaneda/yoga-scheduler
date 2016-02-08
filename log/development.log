@@ -1,0 +1,269 @@
+
+
+Started GET "/" for ::1 at 2016-02-08 11:29:55 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by YogaClassesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "yoga_classes" WHERE (date >= '2016-02-08')
+  [1m[36mYogaClass Load (0.1ms)[0m  [1mSELECT "yoga_classes".* FROM "yoga_classes" WHERE (date >= '2016-02-08')  ORDER BY "yoga_classes"."date" ASC[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "yoga_sessions" WHERE "yoga_sessions"."yoga_class_id" = ?  [["yoga_class_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "yoga_sessions" WHERE "yoga_sessions"."yoga_class_id" = ?[0m  [["yoga_class_id", 4]]
+  [1m[35mYogaSession Exists (0.1ms)[0m  SELECT  1 AS one FROM "yoga_sessions" WHERE "yoga_sessions"."yoga_class_id" = ? AND "yoga_sessions"."user_id" = ? LIMIT 1  [["yoga_class_id", 4], ["user_id", 26]]
+  Rendered yoga_classes/_class_layout.html.erb (21.6ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (29.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 26]]
+Completed 200 OK in 1390ms (Views: 1375.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/home.self-96abd88ea887d3e644758cb6d42d317c2ac7f29da3afd9a7edc76332deec67ce.css?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/weeks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/scaffolds.self-c3f6d0d0fa7ef753f5a8a242deb842cd015dafccf22d533f5c6b6e320c801b35.css?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/errors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/users.self-ec5c601823f8e6b54b971238e1ab1baf4320791bfc2702776084e370eeb703ce.css?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/yoga_classes.self-4a3d3ffc41cf12a3a84eeeec0ec4cf2ee4d06e2c1a9bb751b857612f9146ed91.css?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/yoga_sessions.self-bdbb7e7978092b7ce866c85a605c8cc8568ce514a11f69af6643ad190dd4368c.css?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/errors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/weeks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/yoga_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/assets/dbc-yoga-logo-e88b342f059e7efdc01df99c1e06dcf88c2411791f269c323131f7b8305d4e6c.png" for ::1 at 2016-02-08 11:29:57 -0600
+
+
+Started GET "/" for ::1 at 2016-02-08 11:30:38 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by YogaClassesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "yoga_classes" WHERE (date >= '2016-02-08')
+  [1m[36mYogaClass Load (0.1ms)[0m  [1mSELECT "yoga_classes".* FROM "yoga_classes" WHERE (date >= '2016-02-08')  ORDER BY "yoga_classes"."date" ASC[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "yoga_sessions" WHERE "yoga_sessions"."yoga_class_id" = ?  [["yoga_class_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "yoga_sessions" WHERE "yoga_sessions"."yoga_class_id" = ?[0m  [["yoga_class_id", 4]]
+  [1m[35mYogaSession Exists (0.1ms)[0m  SELECT  1 AS one FROM "yoga_sessions" WHERE "yoga_sessions"."yoga_class_id" = ? AND "yoga_sessions"."user_id" = ? LIMIT 1  [["yoga_class_id", 4], ["user_id", 26]]
+  Rendered yoga_classes/_class_layout.html.erb (19.6ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (27.3ms)
+Completed 500 Internal Server Error in 173ms
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( application.css )` to `config/initializers/assets.rb` and restart your server):
+    3: <head>
+    4:   <title>Yoga</title>
+    5: 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9: </head>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__360777880906324495_70193032845280'
+
+
+  Rendered /Users/svcastaneda/.rvm/gems/ruby-2.1.5/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/svcastaneda/.rvm/gems/ruby-2.1.5/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/svcastaneda/.rvm/gems/ruby-2.1.5/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/svcastaneda/.rvm/gems/ruby-2.1.5/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.9ms)
+  Rendered /Users/svcastaneda/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/svcastaneda/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/svcastaneda/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/svcastaneda/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/svcastaneda/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (353.6ms)
+  Rendered /Users/svcastaneda/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/svcastaneda/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/svcastaneda/.rvm/gems/ruby-2.1.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (403.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-08 11:32:27 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by YogaClassesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "yoga_classes" WHERE (date >= '2016-02-08')
+  [1m[36mYogaClass Load (0.1ms)[0m  [1mSELECT "yoga_classes".* FROM "yoga_classes" WHERE (date >= '2016-02-08')  ORDER BY "yoga_classes"."date" ASC[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "yoga_sessions" WHERE "yoga_sessions"."yoga_class_id" = ?  [["yoga_class_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "yoga_sessions" WHERE "yoga_sessions"."yoga_class_id" = ?[0m  [["yoga_class_id", 4]]
+  [1m[35mYogaSession Exists (0.2ms)[0m  SELECT  1 AS one FROM "yoga_sessions" WHERE "yoga_sessions"."yoga_class_id" = ? AND "yoga_sessions"."user_id" = ? LIMIT 1  [["yoga_class_id", 4], ["user_id", 26]]
+  Rendered yoga_classes/_class_layout.html.erb (21.4ms)
+  Rendered yoga_classes/index.html.erb within layouts/application (28.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 26]]
+Completed 200 OK in 668ms (Views: 653.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/home.self-96abd88ea887d3e644758cb6d42d317c2ac7f29da3afd9a7edc76332deec67ce.css?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/errors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/weeks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/users.self-ec5c601823f8e6b54b971238e1ab1baf4320791bfc2702776084e370eeb703ce.css?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/scaffolds.self-c3f6d0d0fa7ef753f5a8a242deb842cd015dafccf22d533f5c6b6e320c801b35.css?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/yoga_sessions.self-bdbb7e7978092b7ce866c85a605c8cc8568ce514a11f69af6643ad190dd4368c.css?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/yoga_classes.self-4a3d3ffc41cf12a3a84eeeec0ec4cf2ee4d06e2c1a9bb751b857612f9146ed91.css?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/application.self-dae5c5da7223ce739ad497817a3df9ba2fa2840da302653b11558b4f7d98bfc3.css?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/errors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/weeks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/yoga_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/yoga_sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/application.self-3a3c8b61bda630ee689740ce7cbd0dd8ea6fdd45e2c42eef4661ab38cf268afe.js?body=1" for ::1 at 2016-02-08 11:32:28 -0600
+
+
+Started GET "/assets/dbc-yoga-logo-e88b342f059e7efdc01df99c1e06dcf88c2411791f269c323131f7b8305d4e6c.png" for ::1 at 2016-02-08 11:32:28 -0600
+  [1m[36m (28.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateYogaClasses (20160204160509)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (22.3ms)[0m  [1mCREATE TABLE "yoga_classes" ("id" serial primary key, "date" date NOT NULL, "size" integer NOT NULL, "teacher" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160204160509"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20160204193736)
+  [1m[35m (5.9ms)[0m  BEGIN
+  [1m[36m (14.3ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "first_name" character varying NOT NULL, "last_name" character varying NOT NULL, "email" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160204193736"]]
+  [1m[36m (4.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddPasswordDigestToUsers (20160204195837)
+  [1m[35m (5.8ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "users" ADD "password_digest" character varying[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160204195837"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateYogaSessions (20160204220857)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (8.0ms)[0m  [1mCREATE TABLE "yoga_sessions" ("id" serial primary key, "user_id" integer, "yoga_class_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160204220857"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateWeeks (20160205003100)
+  [1m[35m (5.9ms)[0m  BEGIN
+  [1m[36m (7.6ms)[0m  [1mCREATE TABLE "weeks" ("id" serial primary key, "start_date" date, "end_date" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160205003100"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.3ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'weeks'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.3ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'yoga_classes'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.3ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'yoga_sessions'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
