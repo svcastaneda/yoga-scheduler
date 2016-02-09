@@ -68,6 +68,8 @@ Rails.application.routes.draw do
   post   '/users', to: 'users#create'
   get    '/users/:id', to: 'users#show', as: 'user_classes'
   get    '/users/:id/settings', to: 'users#edit', as: 'user_settings'
+  post   '/users/:id/settings', to: 'users#update'
+  patch  '/users/:id/settings', to: 'users#update'
   get    '/login', to: 'sessions#new'
   post   '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
