@@ -10,7 +10,7 @@
 
 <!-- Insert check here to limit ability to create class to certain users -->
   <br>
-  <% if session[:user_id] %>
+  <% if current_user %>
     <a href='/yoga_classes/new'>Create a new class</a>
   <% end %>
 </div>

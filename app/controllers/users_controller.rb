@@ -25,11 +25,15 @@ class UsersController < ApplicationController
   end
 
   def show
-    user = User.find_by(id: params[:id])
-    if user == current_user
-      render template: 'users/show'
+    if current_user
+      user = User.find_by(id: params[:id])
+      if user == current_user
+        render template: 'users/show'
+      else
+        redirect_to '/500'
+      end
     else
-      redirect_to '/500'
+      redirect_to '/login'
     end
   end
 

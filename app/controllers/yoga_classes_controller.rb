@@ -15,11 +15,17 @@ class YogaClassesController < ApplicationController
     @yoga_class = YogaClass.find(params[:id])
   end
   def new
+    redirect_to '/login' if current_user.nil?
   end
 
   private
     def yoga_class_params
       params.require(:yoga_class).permit(:date, :size)
+    end
+    
+    def current_user
+      return nil if session[:user_id].nil?
+      User.find_by(id: session[:user_id])
     end
 
 end
