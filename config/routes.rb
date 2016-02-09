@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
   resources :weeks
 
-  get 'sessions/index'
-
-  # get 'users/index'
   root 'yoga_classes#index'
   resources :yoga_classes do
     resources :yoga_sessions
@@ -69,11 +66,11 @@ Rails.application.routes.draw do
 
   get    '/users/new', to: 'users#new'
   post   '/users', to: 'users#create'
-  get    '/users/:id', to: 'users#show'
-  get    '/users/:id/settings', to: 'users#edit'
-  get    '/login'   => 'sessions#new'
-  post   '/login'   => 'sessions#create'
-  get    '/logout'  => 'sessions#destroy'
+  get    '/users/:id', to: 'users#show', as: 'user_classes'
+  get    '/users/:id/settings', to: 'users#edit', as: 'user_settings'
+  get    '/login', to: 'sessions#new'
+  post   '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
 
   get "/404", to: "errors#not_found"
   get "/422", to: "errors#unacceptable"

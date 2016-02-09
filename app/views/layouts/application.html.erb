@@ -11,15 +11,12 @@
 	<header>
 		<nav>
 			<% if current_user -%>
-				<!-- <a href="/users/<%= current_user.id %>/settings"><%= image_tag("settings.png", size: "12x12") %></a> -->
-				<a href="/users/<%= current_user.id -%>">classes</a>
-				<form action="/logout" method="get">
-					<input type="hidden" name="_method" value="delete">
-					<input type="submit" value="logout">
-				</form>
+				<%= link_to image_tag("settings.png", size: "12x12"), user_settings_path(current_user) %>
+				<%= link_to 'classes', user_classes_path(current_user) %>
+				<%= link_to 'logout', logout_path, method: :delete %>
 			<% else %>
-				<a href="/users/new">register</a>
-				<a href="/login">login</a>
+				<%= link_to 'register', users_new_path %>
+				<%= link_to 'login', login_path %>
 			<% end %>
 		</nav>
 		<%= link_to image_tag("dbc-yoga-logo.png"), '/' %>
