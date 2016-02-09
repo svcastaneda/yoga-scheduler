@@ -2,20 +2,23 @@ class YogaClassesController < ApplicationController
   def index
     @yoga_classes = YogaClass.all.order(date: :asc).where('date >= ?', Date.today)
   end
+  
   def create
     @yoga_class = YogaClass.new(yoga_class_params)
 
     if @yoga_class.save
-      redirect_to @yoga_class
+      redirect_to yoga_class_path(@yoga_class)
     else
       render template: 'yoga_classes/new'
     end
   end
+  
   def show
     @yoga_class = YogaClass.find(params[:id])
   end
+  
   def new
-    redirect_to '/login' if current_user.nil?
+    redirect_to login_path if current_user.nil?
   end
 
   private

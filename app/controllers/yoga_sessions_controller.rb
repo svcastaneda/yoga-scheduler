@@ -1,5 +1,8 @@
 class YogaSessionsController < ApplicationController
 # skip_before_filter  :verify_authenticity_token
+  def new
+  end
+
   def create
     @user = User.find(session[:user_id])
     class_id = params[:yoga_class_id]
@@ -18,10 +21,22 @@ class YogaSessionsController < ApplicationController
       render template: 'yoga_classes/index'
     end
   end
+  
+  def destroy
+    class_id = params[:yoga_class_id]
+    @yoga_session = YogaSession.find_by({user_id: current_user.id, yoga_class_id: class_id})
+    @yoga_session.destroy
+    redirect_to '/'
+  end
 
-  # private
-  # def yoga_session_params
-  #   params.require(:yoga_session).permit({user_id: session[:user_id], yoga_class_id: params[:yoga_class_id]})
-  # end
+  private
+    # def yoga_session_params
+#       params.require(:yoga_session).permit({user_id: session[:user_id], yoga_class_id: params[:yoga_class_id]})
+#     end
+  
+    def current_user
+      return nil if session[:user_id].nil?
+      User.find_by(id: session[:user_id])
+    end
 
 end
