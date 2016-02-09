@@ -1,0 +1,24 @@
+<% if @errors %>
+	<%= render 'errors/errors', locals: {errors: @errors} %>
+<% end %>
+
+<%= form_for @user, url: user_settings_path(@user) do |f| %>
+	<legend>Update Account</legend>
+	<table>
+		<tr>
+			<td><%= f.label :email %></td>
+			<td><%= f.text_field :email %></td>
+		</tr>
+		<tr>
+			<td><%= f.label :password %></td>
+		  <td><%= f.password_field :password %></td>
+		</tr>
+		<tr>
+		  <td><%= f.label :password_confirmation, "Confirm password" %></td>
+		  <td><%= f.password_field :password_confirmation %></td>
+		</tr>
+		<tr>
+			<td colspan="2"><%= f.submit %></td>
+		</tr>
+	</table>
+<% end %>
